@@ -1,0 +1,424 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/* Leheader et le footer */
+
+header.header, footer.footer{
+    text-align: center;
+}
+
+footer.footer{
+    background-color: #213e4e;
+    padding: 2rem;
+    color: #fff;
+}
+
+footer.footer a{
+    color: #fff;
+    text-decoration: none;    
+}
+
+footer.footer .footbBar{
+    font-size: 2em;
+}
+
+footer.footer .licence{
+    max-width: 50%;
+    margin-inline: auto;
+    font-size: 1em;
+}
+
+footer.footer .licence a{
+    color: #b1adad;
+}
+
+footer img{
+    width: 50px;
+}
+
+/* Le body */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+/* Les icons */
+.navbar ul li a i {
+    color: #fb8b9b;
+} 
+ 
+/* Le hover des icones */
+.navbar i:hover{
+    color: #164154;
+} 
+
+section i {
+    color: #fb8b9b;
+    text-align: center;
+}
+/* Les titres */
+
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 1.8em;
+    color: #193c4f;
+    border: 1px dotted #164154;
+    border-bottom: none;
+    text-align: center;
+    padding: 0.8em;
+}
+h3{
+    
+    font-size: 1.2em;
+}
+h3, h4{
+    text-align: center;
+    color: #fb8b9b;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: "Candal";
+}
+
+/* Les paragraphes */
+
+p{
+    font-size: 1em;
+}
+
+/* Container */
+
+article.container{
+    max-width: 40%;
+    margin-inline: auto;
+}
+
+.container .config{
+    text-align: start;
+    font-size: 2em;
+    font-family: "Open Sans";
+}
+.container .style{
+    text-align: start;
+    font-size: 2em;
+    font-family: "Open Sans";
+}
+
+/* Le header et les iens */
+
+li{
+    list-style: none;
+    margin-block: 1rem;
+    font-family: "Candal";  
+}
+
+ul{
+    padding: 0;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-family: "Candal";
+    color: #164154; 
+    outline: none;
+}
+.navbar ul li .active i{
+    color: #164154; 
+}
+
+/* Pour le wrapper */
+
+section.wrapper{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+div.wrap{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Candal";
+}
+.wrap p{
+    font-size: 2em;
+}
+/* area search */
+section.search{
+    background-color: #fb8b9b;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.search input[type=search]{
+    background-color: #fb8b9c;
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+    color: #fff; 
+    outline: none;
+    width: 50%;
+}
+
+/* style pour le mutualise */
+
+article.wb {
+    font-size: 1.8em;
+    color: #164154;
+    border: 1px dotted #164154;
+    text-align: center;
+}
+article.wtb {
+    font-size: 1.8em;
+    color: #193c4f;
+    padding: 1em; 
+}
+article.wtb h2{
+    padding: 1em; 
+    font-size: 1.3em;
+}
+
+article.wb h2{
+    padding: 1em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #164154;
+}
+
+.wtb p{
+    padding: 0.2em 1rem;
+}
+
+article{
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    margin-block: 2em;
+}
+
+article.wb ul li, article.wtb ul li{
+    text-align: start;
+    font-family: "Open Sans";
+}
+
+.wtb h4, .wb h4{
+    color: #164154;
+}
+
+.wtb a, .wb a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #fb8b9b;
+    width: 100%;
+    padding: 0.5em;
+    display: block;
+
+}
+
+/* Le style css pour la page Dédié */
+
+.wb ul{
+    padding: 0.5em 3rem;
+    
+}
+
+.wb ul li{
+    list-style: circle;
+}
+
+/* Le style css pour la page contact */
+
+article.address {
+    text-align: center;
+    font-size: 1em
+}
+
+.address section{
+    margin-block: 1rem;
+}
+
+.address i{
+    color: #fb8b9c;
+    margin-block: 2rem;
+    padding: 1rem;
+    border-bottom: 2px dotted #fb8b9b;
+    width: 100%;
+}
+
+.address section a{
+    text-decoration: none;
+    color: #fb8b9b;
+}
+
+section.iframe iframe{
+    width: 50%;
+    height: 500px;
+    border: 1px solid #213e4e;
+}
+
+span{
+    text-decoration: underline dotted; 
+}
+
+/* La media queries desktop */
+
+@media screen and (min-width:1200px) {
+
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navbar ul{
+        display: flex;
+       gap: 8rem;
+    }
+
+    .wrapper div.wrap{
+        position: relative;
+        max-width: 80%;
+    }
+
+    article.container h2.h2{
+        font-size: 1.8em;
+    }
+
+    article.container{
+        max-width: 80%;
+    }
+    article.container h2{
+        font-size: 1.8rem;
+    }
+
+    div.config{
+        display: flex;
+    }
+
+    .style div.flex{
+        display: flex;
+    }
+
+    footer.footer ul.footBar{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    article.card{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card article.wb{
+        flex-basis: 30%;
+    }
+
+    .card .wb h2{
+        font-size: 1.3em;
+    }
+
+    .card article.wab h4{
+        margin-bottom: 4em;
+    }
+
+    .card section.contact{
+        font-size: 1.8em;
+
+        
+    }
+    .card address.contact p{
+        font-size: 1.8em;        
+    }
+
+    .card .contact{
+        flex-basis: 80%;
+        padding: 1rem;
+    }
+    
+    .address i{
+        color: #fb8b9c;
+        margin-block: 2rem;
+        padding: 1rem;
+        border-bottom: 2px dotted #fb8b9b;
+        width: 100%;
+    }
+
+    section.iframe{
+        max-width: 80%;
+        margin-inline: auto;
+        margin-block: 1rem;
+    }
+    
+}
+
+/* La media queries pour mobile */
+
+@media screen and (min-width:300px) and (max-width:780px){
+    .header img{
+        width: 80px;
+    }   
+    .header .navbar ul a{
+        font-size: 0.8rem;
+       }
+
+       .main{
+        max-width: 95%;
+        margin-inline: auto;
+        font-size: 0.8rem;
+       }
+
+       section.wrapper{
+        display: block;
+       }
+       div.wrap{
+        font-size: 0.6rem;
+       }
+       section.search{
+      padding: 0;
+    }
+
+    article.container{
+        max-width: 100%;
+    }
+
+    article.style h2{
+        font-size: 0.8rem;
+    }
+
+    div.config section{
+        text-align: center;
+    }
+    div.flex{
+        text-align: center;
+    }
+
+    .card section.contact{
+        font-size: 0.8rem;
+    }
+
+    section.iframe{
+        max-width: 50%;
+        margin-inline: auto;
+    }
+    /* section.iframe iframe{
+        max-width: 100%;
+    } */
+}
+
+
+
