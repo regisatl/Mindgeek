@@ -265,10 +265,17 @@ article.address {
     color: #fb8b9b;
 }
 
-section.iframe iframe{
-    width: 50%;
-    height: 500px;
+section.iframe {
+    max-width: 80%;
+    margin-inline: 20%;
+    height: 300px;
     border: 1px solid #213e4e;
+    margin-block: 1rem;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
 }
 
 span{
@@ -358,11 +365,11 @@ span{
         width: 100%;
     }
 
-    section.iframe{
-        max-width: 80%;
+    /* section.iframe iframe{
+        max-width: 100%;
         margin-inline: auto;
         margin-block: 1rem;
-    }
+    } */
     
 }
 
@@ -411,13 +418,13 @@ span{
         font-size: 0.8rem;
     }
 
-    section.iframe{
+    /* section.iframe{
         max-width: 50%;
         margin-inline: auto;
     }
-    /* section.iframe iframe{
+     section.iframe iframe{
         max-width: 100%;
-    } */
+    }  */
 }
 
 
